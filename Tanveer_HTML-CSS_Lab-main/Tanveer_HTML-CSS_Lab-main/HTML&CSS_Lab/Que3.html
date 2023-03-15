@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>GMAIL ACCOUNT</title>
+        <style type="text/css">
+            video{
+                position: fixed;
+            }
+            div{
+                position: absolute;
+                top:15%;
+                left:40%;
+                min-width: 350px;
+                border: 1px solid white;
+                border-radius: 4px;
+                padding-left: 40px;
+            }
+            input{
+                width: 300px;
+                min-width: 100px;
+                border: none;
+                padding: 10px;
+                margin-bottom: 13%;
+                background-color: antiquewhite;
+                font-size: 20px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            input :focus{
+                outline:none;
+                color:white;
+                background-color: antiquewhite;
+            }
+            button{
+                margin: 20px;
+                width: 80px;
+                border-radius: 4px;
+                color: plum;
+                font-size: 18px;
+                border: none;
+                background-color: purple;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="block">
+            <video autoplay muted loop>
+                <source src="Background.mp4" type="video/mp4">
+            </video>
+            <div>
+                <form action="" id="lab-assignment">
+                <h1>Create Gmail Account</h1>
+                <input type="text" title="name" placeholder="Full Name" required>
+                <br>
+                <input type="number" title="Contact No" min="6000000" max="999999999">
+                <br>
+                <input type="email" title="Email" placeholder="Enter Email" required>
+                <br>
+                <button form="lab-assignment">Reset</button>
+                <button form="lab-assignment">Submit</button>
+            </form>
+            </div>
+        </section>
+    </body>
+   

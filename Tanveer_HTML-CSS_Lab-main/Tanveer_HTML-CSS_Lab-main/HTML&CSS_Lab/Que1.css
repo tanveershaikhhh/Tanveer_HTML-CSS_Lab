@@ -1,0 +1,51 @@
+body{
+    height: auto;
+    margin: 0;
+}
+h1{
+    background-color: red;
+    margin: 0%;
+    padding: 25px;
+    text-align:right;
+}
+#navi{
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+
+}
+.menu{
+    margin: 0%;
+    background-color: grey;
+}
+.menu li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.menu li{
+    position: relative;
+    padding: 10px;
+    display: inline-block;
+}
+.menu li:hover{
+    background-color: blueviolet;
+}
+.menu li:hover #Dropdown_1, .menu li:hover #Dropdown_2{
+    display: block;
+}
+#Dropdown_1,#Dropdown_2{
+    position: absolute;
+    display: none;
+    top: 42px;
+    background-color: white;
+    padding: 0%;
+}
+#Dropdown_1 li:hover,#Dropdown_2 li:hover{
+    background-color: gainsboro;
+}
+#Dropdown_1 li a,#Dropdown_2 li a{
+    color: steelblue;
+    font-size: 17px;
+}
+

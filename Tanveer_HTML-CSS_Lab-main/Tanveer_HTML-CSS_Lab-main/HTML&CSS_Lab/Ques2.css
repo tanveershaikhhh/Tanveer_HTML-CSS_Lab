@@ -1,0 +1,99 @@
+body{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    padding: 20px;
+    width: 20%;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box1{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.box2{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.bar1,.bar2,.bar3{
+    position: relative;
+    height: 95%;
+    width: 15%;
+    background-color: white;
+    overflow: hidden;
+}
+.bar1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background-color: black;
+    bottom: 0;
+    animation: barn 2s;
+    animation-iteration-count: 2;
+}
+.bar2::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background-color: black;
+    bottom: 0;
+    animation: barn 2s;
+    animation-iteration-count: 2;
+
+}
+.bar3::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background-color: black;
+    bottom: 0;
+    animation: barn 2s;
+    animation-iteration-count: 2;
+}
+
+@keyframes barn{
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.bar1::after{
+    content: "30%";
+    position: absolute;
+    padding-top: 17%;
+    bottom: 0;
+    left: 20%;
+    transform: translateY(100%);
+}
+.bar2::after{
+    content: "40%";
+    position: absolute;
+    padding-top: 17%;
+    bottom: 0;
+    left: 20%;
+    transform: translateY(100%);
+}
+.bar3::after{
+    content: "80%";
+    position: absolute;
+    padding-top: 17%;
+    bottom: 0;
+    left: 20%;
+    transform: translateY(100%);
+}
+
